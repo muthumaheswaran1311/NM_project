@@ -13,7 +13,7 @@ const Login = () => {
   const navigate = useNavigate();
 
   const LoginApi = async()=> {
-    const response = await axios.post("http://localhost:3000/api/login",{email,password})
+    const response = await axios.post("https://nm-project-quizzy.onrender.com/api/login",{email,password})
     if(response.data.success){
       settoken(response.data.token);
       localStorage.setItem("token",response.data.token)
@@ -22,7 +22,7 @@ const Login = () => {
   }
 
   const RegisterApi = async()=> {
-    const response = await axios.post("http://localhost:3000/api/register",{username,email,password})
+    const response = await axios.post("https://nm-project-quizzy.onrender.com/api/register",{username,email,password})
     if(response.data.success){
       settoken(response.data.token);
       localStorage.setItem("token",response.data.token)
