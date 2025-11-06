@@ -43,7 +43,7 @@ const Create = () => {
   }
   const newQuestion = async() => {
     const questionSet = {quizname,questionname,options,correctanswer}  
-    const response = await axios.post("http://localhost:3000/api/create",questionSet,{headers:{token}})
+    const response = await axios.post("https://nm-project-quizzy.onrender.com/api/create",questionSet,{headers:{token}})
     if(response.data.success){
       navigate("/question")
     }
