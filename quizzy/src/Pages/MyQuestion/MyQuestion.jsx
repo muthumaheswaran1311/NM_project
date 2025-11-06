@@ -7,7 +7,7 @@ const MyQuestion = () => {
   const token = localStorage.getItem("token");
   const [myQuestion,setmyQuestion] = useState([])
   const fetchQuestion = async() => {
-    const response = await axios.get("http://localhost:3000/api/fetch",{headers:{
+    const response = await axios.get("https://nm-project-quizzy.onrender.com/api/fetch",{headers:{
       token
     }})
     if(response.data.success){
