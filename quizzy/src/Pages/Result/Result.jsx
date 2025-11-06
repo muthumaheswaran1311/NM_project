@@ -13,7 +13,7 @@ const Result = () => {
   
   const fetchResults = async() => {
     setresult(true);
-    const response = await axios.get("http://localhost:3000/api/showResults",{headers:{token}});
+    const response = await axios.get("https://nm-project-quizzy.onrender.com/api/showResults",{headers:{token}});
     if(response.data.success){
       setresultData(response.data.resultData);
     }
