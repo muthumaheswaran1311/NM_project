@@ -17,7 +17,7 @@ const Evaluate = () => {
     const token=localStorage.getItem("token");
     
     const getQuestion = async() => {
-        const response = await axios.post("http://localhost:3000/api/paper",{id});
+        const response = await axios.post("https://nm-project-quizzy.onrender.com/api/paper",{id});
         if(response.data.success){
             setpaper(response.data.questionPaper);
             
@@ -40,7 +40,7 @@ const Evaluate = () => {
 
     const sendResults = async() => {
         const data = {exactAnswer,steppoints,total,questionId,authorId};
-        const response = await axios.post("http://localhost:3000/api/results",{data},{headers:{token}});
+        const response = await axios.post("https://nm-project-quizzy.onrender.com/api/results",{data},{headers:{token}});
         if(!token){
             navigate("/login");
         }
