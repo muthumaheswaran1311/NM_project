@@ -1,0 +1,32 @@
+.my-question{
+    font-family: "Poppins", sans-serif;
+    background: #D38312;  
+    background: -webkit-linear-gradient(to right, #A83279, #D38312); 
+    background: linear-gradient(to right, rgb(169, 50, 121), #D38312); 
+    margin-top: 5%;
+}
+.my-question-heading{
+    color: rgb(20,60,70);
+    font-size:2.5rem ;
+    text-align: center;
+}
+.question-set{
+    display: flex;
+    gap: 30px;
+    margin-left: 50px;
+}
+.question{
+    background-color: rgb(255, 255, 255,0.3);
+    padding: 10px 20px;
+    backdrop-filter: blur(20px) brightness(1.1);
+    border-radius:20px ;
+    width: 200px;
+    height: 200px;
+}
+.delete-button{
+    padding: 10px;
+    background-color: rgb(20,60,70);
+    color:white ;
+    border: none;
+    cursor: pointer;
+}

@@ -1,0 +1,159 @@
+
+.heading{
+    color: rgb(20,60,70);
+    text-align: center;
+    font-size: 3.0rem;
+    margin-top:3%;
+}
+.question-name{
+    display: flex;
+    flex-direction: column;
+    margin:0% 7% ;
+    gap: 10px;
+    
+}
+.question-name .input-label{
+    font-size: 22px;
+    color: white;
+}
+.question-name .input-name{
+    outline: none;
+    border: none;
+    height: 35px;
+    background-color: rgb(0, 0, 0,0.3);
+    backdrop-filter: blur(30px) brightness(1.1);
+    padding-left:10px ;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    animation: anime 4s forwards;
+}
+@keyframes anime {
+    0%{
+        width: 0%;
+
+    }
+    100%{
+        width: 100%;
+    }
+}
+.question-name .input-name::placeholder{
+    color: gray;
+}
+.question-tab{
+    margin:1% 7% ;
+    border: 1px white solid;
+    padding: 5px 10px;
+    position: relative;
+    
+    
+}
+.name-label{
+    font-size: 22px;
+    color: white;
+}
+.option-label{
+    font-size: 20px;
+    color: rgb(20,60,70);
+}
+.option-input-tab{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.question-input{
+    outline: none;
+    border: none;
+    height: 35px;
+    width: 95%;
+    background-color: rgb(0, 0, 0,0.3);
+    backdrop-filter: blur(30px) brightness(1.1);
+    padding-left:10px ;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    animation: animation 4s forwards;
+}
+@keyframes animation {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 95%;
+    }
+    
+}
+.option-input{
+    outline: none;
+    border: none;
+    height: 35px;
+    width: 95%;
+    background-color: rgb(0, 0, 0,0.3);
+    backdrop-filter: blur(30px) brightness(1.1);
+    padding-left:10px ;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    animation: option 2s forwards;
+}
+@keyframes option {
+    0%{
+        width:0;
+    }
+    100%{
+        width:95%;
+    }
+}
+.add-options{
+    background-color: rgb(20,60,70);
+    color: white;
+    border: 1px white solid;
+    margin-top: 5px;
+    padding: 10px 15px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+@media (max-width: 600px) {
+    .heading{
+        margin-top: 20%;
+    }
+}
+.x-mark{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+}
+.correct-answer{
+    outline: none;
+    border: none;
+    height: 35px;
+    width: 50%;
+    background-color: rgb(0, 0, 0,0.3);
+    backdrop-filter: blur(30px) brightness(1.1);
+    padding-left:10px ;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    margin-top: 7px;
+}
+.add-questions{
+    padding: 10px;
+    background-color: rgb(20,60,70) ;
+    border: 1px white solid;
+    border-radius: 10px;
+    margin-left: 45%;
+    margin-bottom: 2%;
+    color: white;
+    cursor: pointer;
+}
+.submit-button{
+    padding: 10px;
+    background-color: rgb(20,60,70) ;
+    border: 1px white solid;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-bottom: 2%;
+    color:white;
+    cursor: pointer;
+}

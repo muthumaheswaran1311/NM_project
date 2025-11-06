@@ -1,0 +1,42 @@
+.paper-heading{
+    margin-top: 5%;
+    text-align: center;
+}
+.paper-user-id{
+    margin-left: 85%;
+}
+.paper-question-set{
+    margin-left: 10%;
+}
+.paper-question{
+    background-color: white;
+    padding:10px ;
+    width: 85%;
+}
+.paper-options{
+    margin-left:20px;
+}
+.paper-option{
+    background-color: white;
+    padding: 10px;
+    width: 50%;
+    cursor: pointer;
+}
+.paper-option-selected{
+    background-color: green;
+    padding: 10px;
+    width: 50%;
+    cursor: pointer;
+}
+.answer-submit{
+    margin-left: 50%;
+    padding: 10px;
+    background-color: rgb(255, 255, 255,0.2);
+    backdrop-filter: blur(50px) brightness(1.1);
+    border-radius: 20px;
+    border: none;
+    width: 100px;
+    font-size: 1.0rem;
+    font-weight: bold;
+    cursor: pointer;
+}

@@ -1,0 +1,19 @@
+.heading-section{
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+}
+.result-heading-content{
+    color: black;
+}
+.result-heading-content-active{
+    color: green;
+}
+.response-heading-content{
+    color: black;
+}
+.response-heading-content-active{
+    color: green;
+}
+
+
