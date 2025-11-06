@@ -12,7 +12,7 @@ const Response = () => {
   const [userQuestions,setuserQuestions] = useState([]);
   
   const getQuestion = async() => {
-    const response = await axios.post("http://localhost:3000/api/user",{userId})
+    const response = await axios.post("https://nm-project-quizzy.onrender.com/api/user",{userId})
     if(response.data.success){
       setuserQuestions(response.data.userQuestion)
     }
